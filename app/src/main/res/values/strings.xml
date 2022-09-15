@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Nasa Image</string>
+    <string name="label_title">Title</string>
+    <string name="label_date">Date</string>
+    <string name="label_explanation">Explanation</string>
+    <string name="label_copyright">Copy Right</string>
 </resources>

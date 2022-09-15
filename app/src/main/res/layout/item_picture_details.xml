@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true">
+
+        <ImageView
+            android:id="@+id/image_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:minHeight="300dp"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/label_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/label_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_details" />
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/label_title"
+            app:layout_constraintStart_toStartOf="@id/label_title"
+            app:layout_constraintTop_toBottomOf="@id/label_title"
+            tools:text="M 33 : The Triangulum" />
+
+        <TextView
+            android:id="@+id/label_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/label_date"
+            app:layout_constraintEnd_toEndOf="@id/text_title"
+            app:layout_constraintStart_toStartOf="@id/text_title"
+            app:layout_constraintTop_toBottomOf="@id/text_title" />
+
+        <TextView
+            android:id="@+id/text_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/label_date"
+            app:layout_constraintStart_toStartOf="@id/label_date"
+            app:layout_constraintTop_toBottomOf="@id/label_date"
+            tools:text="2019 - 12 - 31" />
+
+        <TextView
+            android:id="@+id/label_explanation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/label_explanation"
+            app:layout_constraintEnd_toEndOf="@id/text_date"
+            app:layout_constraintStart_toStartOf="@id/text_date"
+            app:layout_constraintTop_toBottomOf="@id/text_date" />
+
+        <TextView
+            android:id="@+id/text_explanation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/label_explanation"
+            app:layout_constraintStart_toStartOf="@id/label_explanation"
+            app:layout_constraintTop_toBottomOf="@id/label_explanation"
+            tools:text="Why does this galaxy have a ring of bright blue stars?" />
+
+        <TextView
+            android:id="@+id/label_copyright"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/label_copyright"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/text_explanation"
+            app:layout_constraintTop_toBottomOf="@id/text_explanation" />
+
+        <TextView
+            android:id="@+id/text_copyright"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintEnd_toEndOf="@id/label_copyright"
+            app:layout_constraintStart_toStartOf="@id/label_copyright"
+            app:layout_constraintTop_toBottomOf="@id/label_copyright"
+            tools:text="ESA/HubbleNASA" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

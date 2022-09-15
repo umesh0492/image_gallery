@@ -1,4 +1,4 @@
-package com.nasa.gallery.model
+package com.nasa.gallery.data.model
 
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName

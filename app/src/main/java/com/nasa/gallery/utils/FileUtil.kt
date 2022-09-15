@@ -3,7 +3,7 @@ package com.nasa.gallery.utils
 import android.content.Context
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import com.nasa.gallery.model.NasaItem
+import com.nasa.gallery.data.model.NasaItem
 import java.lang.reflect.Type
 import java.nio.charset.Charset
 

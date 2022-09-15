@@ -1,6 +1,6 @@
-package com.nasa.gallery.localsource
+package com.nasa.gallery.data.localsource
 
-import com.nasa.gallery.model.NasaItem
+import com.nasa.gallery.data.model.NasaItem
 import com.nasa.gallery.utils.FileUtil
 
 class LocalDataSourceRepository(private val fileUtil: FileUtil) : LocalDataSource {

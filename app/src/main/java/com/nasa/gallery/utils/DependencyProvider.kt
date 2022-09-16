@@ -9,6 +9,9 @@ object DependencyProvider {
 
     private lateinit var context: Application
 
+    val vmFactory: NasaViewModelProviderFactory by lazy {
+        NasaViewModelProviderFactory(getLocalDataSourceRepository())
+    }
 
     fun getApplicationContext(): Application {
         return context
@@ -26,7 +29,7 @@ object DependencyProvider {
         return FileUtil(context)
     }
 
-    private fun getLocalDataSourceRepository(): LocalDataSource {
+    fun getLocalDataSourceRepository(): LocalDataSource {
         return LocalDataSourceRepository(getFileUtil())
     }
 }
